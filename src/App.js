@@ -21,7 +21,6 @@ function App() {
             <div className='flex justify-center flex-col items-center space-y-4'>
               <Routes>
                 <Route path="/" element={<PostPage/>}/>
-                <Route path="/posts/:id" element={<ShowPost/>}/>
                 <Route path="/test" element={<Test/>}>
 
               </Route>
