@@ -15,9 +15,6 @@ export const PostPage = ()=>{
       },[])
 
     return <>
-         {
-            !!posts? posts.map(el=>(<PostCard posts={el}/>)):<div className="text-white">No Record Found</div>
-              
-            }
+         {!!posts? posts.map(el=>(<PostCard posts={el}/>)):<div className="text-white">No Record Found</div>}
     </>
 }

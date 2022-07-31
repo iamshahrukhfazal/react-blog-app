@@ -36,7 +36,6 @@ export const ShowPost = ()=>{
     }
     const createComment = async(content,post_id)=>{
         const data  = await addComment(post_id,{ user_id:3, content:content})
-        console.log(data)
         setPostData(data)
     }
 

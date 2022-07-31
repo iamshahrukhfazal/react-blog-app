@@ -6,7 +6,6 @@ import { getAllPosts } from './api';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'  
 import {ShowPost} from "./pages/postShow"
 import {PostPage} from "./pages/postsPage"
-import { Test } from './pages/test';
 import PostState from "./context/PostState"
 function App() {           
  
@@ -23,8 +22,8 @@ function App() {
             <div className='flex justify-center flex-col items-center space-y-4'>
               <Routes>
                 <Route path="/" element={<PostPage/>}/>
-                <Route path="/posts/:id" element={<ShowPost/>}/>
-                <Route path="/test" element={<Test/>}>
+                <Route path="/posts/:id" element={<ShowPost/>}>
+           
 
               </Route>
             </ Routes>
